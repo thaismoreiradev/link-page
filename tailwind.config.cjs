@@ -1,11 +1,19 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
+  
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+       backgroundImage: {
+        'mobilelightmode': "url('./public/mobilelightmode.jpg')",
+        'mobiledarkmode': "url('./public/mobiledarkmode.jpg')",
+      }
+
+    },
   },
   plugins: [],
 }

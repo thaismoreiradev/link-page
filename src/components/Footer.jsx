@@ -1,15 +1,15 @@
 
-export const Footer = () => (
+export const Footer = ({ text }) => (
 
-    <footer className="text-neutral-800 text-xs">
+    <footer className= "text-xs">
 
-        <p>Developed by
+        <p>
             <a
                 href="https://github.com/thaismoreiradev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="outline-none"
-            > Thais Moreira
+                className="outline-none text-xs"
+            >{text}
             </a>
         </p>
 
