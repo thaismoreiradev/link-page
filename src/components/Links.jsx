@@ -1,8 +1,12 @@
 
-export const Links = ({text, link}) => (
+export const Links = ({ text, link, darkTheme }) => (
 
-    <div>
-        <button className="bg-neutral-300">
+    <div className=' w-[130px] xs:w-[160px]'>
+        <button className={`
+        flex justify-center items-center rounded-xl py-1 px-3 border-[1px] w-full h-8
+        ${darkTheme ? "border-white" : "border-neutral-700"}
+        `}
+        >
             <a
                 href={link}
                 target="_blank"

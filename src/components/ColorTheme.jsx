@@ -11,33 +11,28 @@ export const ColorTheme = ({ darkTheme, setDarkTheme }) => (
 
 
 
-    <form className='flex relative bg-red-300 w-2/3 p-1 justify-center'
-
-        onSubmit={(e) => {
-            e.preventDefault()
-            setDarkTheme(!darkTheme)
-
-        }}
+    <div
+        className='flex relative w-full p-1 justify-center'
+        onClick={() => setDarkTheme(prevTheme => !prevTheme)}
     >
 
-    
 
-        <button className=
-            {darkTheme ? "absolute right-0  flex bg-red-200 rounded-full w-5 h-5 absolute top-[10%] justify-center items-center text-xs cursor-pointer" :
 
-                'flex bg-red-200 rounded-full w-5 h-5 absolute top-[10%] left-[-1%] justify-center items-center text-xs cursor-pointer'
-            }
-
-        >
+        <button className={`
+        flex absolute rounded-full w-5 h-5 top-[10%] justify-center items-center text-xs cursor-pointer border-[1px] border-neutral-700
+        ${darkTheme ? "bg-neutral-900 border-white right-0" :
+                "bg-neutral-50 border-neutral-700 left-[-1%]"}     
+        `}>
 
             {
                 darkTheme ? <BsSunFill /> : <MdNightsStay />
             }
 
         </button>
-        <span className='block rounded-2xl bg-neutral-900 w-20 h-4'></span>
-    </form >
-
-
+        <span className={`
+        block rounded-2xl w-full h-4 border-[1px]
+        ${darkTheme ? "border-white" : "border-neutral-700"}
+        `}></span>
+    </div >
 
 )   
