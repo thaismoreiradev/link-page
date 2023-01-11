@@ -10,18 +10,17 @@ module.exports = {
 
     screens: {
       'xs': '375px',
-      'sm': '600px'
-  },
-
-      
+      'sm': '600px',
+      'md': '768px',
+    },
+ 
     extend: {
        backgroundImage: {
-        'mobilelightmode': "url('./public/mobilelightmode.jpg')",
-        'mobiledarkmode': "url('./public/mobiledarkmode.jpg')",
-        'desktoplightmode': "url('./public/desktoplightmode.jpg')",
-        'desktopdarkmode': "url('./public/desktopdarkmode.jpg')"
+        'mobilelightmode': "url('https://backgrounds-options.s3.sa-east-1.amazonaws.com/lightskymobile.jpg')",
+        'mobiledarkmode': "url('https://backgrounds-options.s3.sa-east-1.amazonaws.com/darkskymobile.jpg')",
+        'desktoplightmode': "url('https://backgrounds-options.s3.sa-east-1.amazonaws.com/lightskydesktop.jpg')",
+        'desktopdarkmode': "url('https://backgrounds-options.s3.sa-east-1.amazonaws.com/darkskydesktop.jpg')"
       }
-
     },
   },
   plugins: [],
